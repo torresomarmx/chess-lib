@@ -135,6 +135,11 @@ func (pos *Position) CastleRights() CastleRights {
 	return pos.castleRights
 }
 
+// Returns move count for the position
+func (pos *Position) MoveCount() int {
+	return pos.moveCount
+}
+
 // Returns true if position in check, otherwise false
 func (pos *Position) InCheck() bool {
 	return pos.inCheck
