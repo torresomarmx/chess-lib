@@ -135,6 +135,16 @@ func (pos *Position) CastleRights() CastleRights {
 	return pos.castleRights
 }
 
+// Returns move count for the position
+func (pos *Position) MoveCount() int {
+	return pos.moveCount
+}
+
+// Returns true if position in check, otherwise false
+func (pos *Position) InCheck() bool {
+	return pos.inCheck
+}
+
 // String implements the fmt.Stringer interface and returns a
 // string with the FEN format: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
 func (pos *Position) String() string {
